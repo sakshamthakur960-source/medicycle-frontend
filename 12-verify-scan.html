@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7991af","surface-container-high":"#dce9ff","secondary":"#006c4a","tertiary-container":"#401f00","tertiary-fixed-dim":"#ffb77d","surface-bright":"#f8f9ff","on-error-container":"#93000a","surface":"#f8f9ff","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005137","error":"#ba1a1a","secondary-fixed":"#85f8c4","inverse-surface":"#213145","on-tertiary-fixed-variant":"#6e3900","on-tertiary":"#ffffff","on-surface-variant":"#43474d","secondary-fixed-dim":"#68dba9","on-surface":"#0b1c30","on-background":"#0b1c30","background":"#f8f9ff","on-primary-fixed":"#011d35","on-tertiary-container":"#d77503","outline":"#74777e","on-secondary":"#ffffff","primary-fixed-dim":"#b0c9e8","primary":"#001428","tertiary":"#220e00","secondary-container":"#82f5c1","surface-tint":"#49607c","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#314863","surface-container-highest":"#d3e4fe","outline-variant":"#c3c6ce","primary-fixed":"#d1e4ff","surface-container-lowest":"#ffffff","inverse-primary":"#b0c9e8","surface-container":"#e5eeff","on-secondary-fixed":"#002114","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#2f1500","primary-container":"#0f2942","surface-variant":"#d3e4fe","on-error":"#ffffff","error-container":"#ffdad6","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","on-secondary-container":"#00714e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","margin-tablet":"2rem","margin-desktop":"3rem","space-md":"1rem","space-xs":"0.25rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","space-2xl":"3rem","gutter-desktop":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"display-lg":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"]},"fontSize":{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["16px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,41,66,0.06)]"><div class="h-20 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f2942
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wbtz-4h-65Sii-69tBO_6kW5mW5G8xo6OAwWx1rLcjbZ7grAUbNuvfDYN1Jn7aQ4QdRAkAN6qJv0nSI1DZiY7dpfLHL6WejdI3LFiuXcYOiPhhvN3VpgH5kwMtt12aZAL5h2LawXQjoSfnaRlFrG-Ca3N97y6a0DZJzfeoac5wKez27zCM73LczOJviYmqH-tKPHVRtRrpyYOBYV1yYm06U7gCFecSWDt7Ca_F7ClPqayOjsOKZd4vVDQ"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-primary">MediCycle</span><span class="font-label-sm text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-bold">Partner Staff</span></div><span class="font-body-sm text-[11px] leading-tight text-on-surface-variant truncate max-w-[200px]">Apollo Pharmacy #104 · Indiranagar</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xs:flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Suresh (RPh)</span><span class="font-body-sm text-[10px] text-on-surface-variant leading-tight">Counter #2</span></div><div class="relative flex items-center justify-center min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1VqRmRwdl70b0iiMBNURDhLFphntwVElGvL6Cq98nsqIhbBlkdrFzsdw2PhqxdVFdJSCpsSt0CKPFTptuMW29BIsllmlCIdkRNYfFrJ2ZI0xljkut_ifEg4HJR-qxjdH6TWOfWwX32c2KAX3THk6QIHB9ROXgj8qsuN-SYY_XBkbgixI3Rtd0tJRizPhmP4vGHGJEd7O4ss-iktt0PGmVSMqbLFLFFM051rYyUgQE_UnVX0Jndq8CM_Pgbj"/><span class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div></div></div><div class="flex items-center justify-between"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Verify Scan</h1><div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-[11px]">POS Scanner Online</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md py-space-sm gap-space-md">
+<!-- Active Session Banner -->
+<section class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Ramesh K.</span>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">elderly</span> Senior Tier
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Drop Pass #MC-DROP-90214</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-secondary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span> Live Desk
+        </span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="session-timer">00:24</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Target Pace: &lt; 60s per handoff</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Fast Pass Active</span>
+</div>
+</div>
+</section>
+<!-- Interactive Optical Scanner Viewfinder Frame -->
+<section class="flex flex-col bg-primary-container rounded-xl p-space-md text-on-primary shadow-md overflow-hidden relative">
+<div class="flex items-center justify-between mb-space-sm z-10">
+<div class="flex items-center gap-1.5 bg-surface/10 px-2.5 py-1 rounded-full backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">center_focus_strong</span>
+<span class="font-label-sm text-label-sm text-surface-bright">AI Optical Reticle Active</span>
+</div>
+<div class="flex items-center gap-2">
+<button aria-label="Toggle Torch" class="w-9 h-9 rounded-full bg-surface/15 flex items-center justify-center text-surface-bright hover:bg-surface/25 active:scale-95 transition-transform" id="flash-toggle" type="button">
+<span class="material-symbols-outlined text-[18px]">flash_on</span>
+</button>
+<button aria-label="Switch Camera" class="w-9 h-9 rounded-full bg-surface/15 flex items-center justify-center text-surface-bright hover:bg-surface/25 active:scale-95 transition-transform" id="cam-switch" type="button">
+<span class="material-symbols-outlined text-[18px]">flip_camera_ios</span>
+</button>
+</div>
+</div>
+<!-- Viewfinder Screen Visual Area -->
+<div class="relative w-full h-56 rounded-lg overflow-hidden bg-primary flex items-center justify-center">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60" data-alt="A close-up pharmacist viewpoint looking down through a handheld tablet scanner aiming at a blister strip of Metformin tablets on a sterile pharmacy countertop under clean blue-tinted overhead dispensary lighting with subtle green digital grid overlays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDou4Ob9yvJRjmktSy9OaHLtK6U6rpIxdWxM2kaBFOAmRU4XZm6nWB1L6ZyiOnPQxKnbxCG_Mg4zmngxaQj4GuqgUuZxjyN0IhSjNo2fIZWyXnlRUMg_vpXveApHVIAZHzgpoADRw-axAzDeSeupchGvMxIqAkiC3TggvrvgKaPm6WMBS6U10KoWrMvan_z5Tv6JipjxUbVQAQi7BDHC5ugZTKnslQJj0QcabYYXHZB0BQ9Gyz0BCcTLA"/>
+<!-- Scan reticle and laser sweep -->
+<div class="absolute inset-4 rounded-lg flex items-center justify-center pointer-events-none">
+<!-- Reticle Corners -->
+<div class="absolute top-0 left-0 w-6 h-6 border-t-4 border-l-4 border-secondary-fixed rounded-tl"></div>
+<div class="absolute top-0 right-0 w-6 h-6 border-t-4 border-r-4 border-secondary-fixed rounded-tr"></div>
+<div class="absolute bottom-0 left-0 w-6 h-6 border-b-4 border-l-4 border-secondary-fixed rounded-bl"></div>
+<div class="absolute bottom-0 right-0 w-6 h-6 border-b-4 border-r-4 border-secondary-fixed rounded-br"></div>
+<!-- Animated Laser Line -->
+<div class="w-full h-0.5 bg-secondary-fixed shadow-[0_0_12px_#85f8c4] animate-pulse"></div>
+</div>
+<!-- Detected GTIN Overlay Pill -->
+<div class="absolute bottom-3 left-3 right-3 bg-inverse-surface/90 backdrop-blur-md rounded-lg p-2.5 flex items-center justify-between text-inverse-on-surface shadow-md">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed shrink-0">barcode_scanner</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[11px] text-secondary-fixed font-bold truncate">GTIN: 08901117002319</span>
+<span class="font-body-sm text-[13px] text-surface-bright font-semibold truncate">Metformin HCl 500mg (Glycomet)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed shrink-0">check_circle</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-3 z-10">
+<span class="font-body-sm text-[12px] text-on-primary-container">Optical engine: MediCycle Rx-Vision v4.2</span>
+<button class="font-label-sm text-label-sm text-secondary-fixed hover:underline flex items-center gap-1" type="button">
+<span>High-Res Sensor</span>
+<span class="material-symbols-outlined text-[15px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Automated Eligibility & Fraud-Prevention Guardrails -->
+<section class="flex flex-col bg-surface-container-low rounded-xl p-space-md shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">verified_user</span>
+        Automated Protocol Checks
+      </h2>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded-full bg-secondary/15 text-secondary font-bold">Passed 3/4</span>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<!-- Guardrail 1 -->
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Classification</span>
+<span class="font-label-sm text-[11px] px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">Schedule H</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Non-Controlled / Non-Narcotic eligible for green diversion.</span>
+</div>
+</div>
+<!-- Guardrail 2 -->
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Packaging Condition</span>
+<span class="font-label-sm text-[11px] px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">Blister Sealed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Foil intact with visible batch numbers; no dampness or leaks.</span>
+</div>
+</div>
+<!-- Guardrail 3 -->
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0 mt-0.5">check_circle</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Monthly Quota Check</span>
+<span class="font-label-sm text-[11px] text-secondary font-bold">3 / 10 used</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Household volume safe, zero diversion or fraud anomalies.</span>
+</div>
+</div>
+<!-- Guardrail 4: Notice -->
+<div class="flex items-start gap-2.5 p-2.5 rounded-lg bg-surface-container-high/60 shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-on-tertiary-container shrink-0 mt-0.5">info</span>
+<div class="flex flex-col flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Expiry Status</span>
+<span class="font-label-sm text-[11px] px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">Exp 08/2024</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Expired blister. Auto-routed to high-temperature thermal incineration.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Quantity, Strip Counting & Bin Assignment -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-space-md shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant font-bold">Batch Identification</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">Glycomet 500mg</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">USV Private Limited · Batch #GLM-88910</span>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">medication</span>
+</div>
+</div>
+<!-- Stepper Counter -->
+<div class="flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex flex-col pl-1">
+<span class="font-label-md text-label-md text-on-surface">Physical Strips Count</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="tab-count">20 Tablets (10 tabs/strip)</span>
+</div>
+<div class="flex items-center gap-3">
+<button aria-label="Decrease strips" class="w-11 h-11 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface active:scale-95 hover:bg-surface-container-high transition-transform" id="qty-minus" type="button">
+<span class="material-symbols-outlined text-[22px]">remove</span>
+</button>
+<span class="font-headline-md text-headline-md text-primary font-bold min-w-[32px] text-center" id="qty-val">2</span>
+<button aria-label="Increase strips" class="w-11 h-11 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface active:scale-95 hover:bg-surface-container-high transition-transform" id="qty-plus" type="button">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</button>
+</div>
+</div>
+<!-- Bin Assignment Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold flex items-center gap-1" for="bin-select">
+<span class="material-symbols-outlined text-[16px] text-secondary">inventory_2</span>
+        Vault Bin Routing
+      </label>
+<div class="relative w-full">
+<select class="w-full h-12 pl-3 pr-10 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface appearance-none focus:outline-none focus:bg-surface-container" id="bin-select">
+<option selected="">Bin A-04 (Solid Non-Hazardous Blisters)</option>
+<option>Bin B-02 (Expired Liquid Formulations)</option>
+<option>Bin C-01 (Sharps &amp; Needles Certified)</option>
+<option>Bin Q-99 (Quarantine / Secondary Inspection)</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant absolute right-3 top-3.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</section>
+<!-- MediCredit & Commission Preview Card -->
+<section class="flex flex-col bg-surface-container rounded-xl p-space-md shadow-sm gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">loyalty</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Reward &amp; Incentive Allocation</span>
+</div>
+<span class="font-label-sm text-[10px] px-2 py-0.5 rounded bg-secondary/15 text-secondary font-bold">Auto-Calculated</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Customer reward -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Customer Reward</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-secondary font-bold" id="customer-credits">+40 MC</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Sent to Ramesh's App</span>
+</div>
+<!-- Suresh Commission -->
+<div class="flex flex-col p-3 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="font-body-sm text-[12px] text-on-surface-variant">Pharmacy Ledger</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold" id="pharm-commission">+₹15.00</span>
+<span class="font-body-sm text-[11px] text-secondary font-semibold mt-0.5">Suresh Staff Share</span>
+</div>
+</div>
+<!-- Eco Metrics Pill -->
+<div class="flex items-center gap-2.5 p-2.5 rounded-lg bg-secondary/10">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary font-bold">120 Liters Water Table Shielded</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Guaranteed zero groundwater seepage via certified thermal autoclaving.</span>
+</div>
+</div>
+</section>
+<!-- Speed Action Flow Buttons -->
+<section class="flex flex-col gap-space-sm pt-1">
+<!-- Primary Green Seal Button -->
+<button class="w-full h-14 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-md hover:opacity-95 active:scale-[0.98] transition-all" id="seal-btn" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Confirm &amp; Seal in Tamper Bag</span>
+</button>
+<!-- Secondary Add Another Button -->
+<button class="w-full h-12 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 active:scale-[0.98] transition-all" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">add_circle</span>
+<span>+ Add Another Medicine in Drop</span>
+</button>
+<!-- Flag Ineligible Exception -->
+<div class="flex justify-center py-1">
+<button class="font-label-sm text-label-sm text-error hover:underline flex items-center gap-1.5 p-2" type="button">
+<span class="material-symbols-outlined text-[16px]">report_problem</span>
+<span>Flag Ineligible / Hazardous item (Return to owner)</span>
+</button>
+</div>
+</section>
+<!-- Visual Seal Confirmation Toast Dialog (Hidden by Default) -->
+<div class="fixed inset-x-4 bottom-24 p-space-md bg-inverse-surface text-inverse-on-surface rounded-xl shadow-xl z-50 hidden flex-col gap-2 transition-all" id="seal-modal">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">task_alt</span>
+<span class="font-headline-sm text-headline-sm text-surface-bright">Drop Sealed &amp; Vaulted</span>
+</div>
+<button aria-label="Close notification" class="text-inverse-on-surface hover:text-surface-bright" id="close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-highest">
+      Bag barcode #MB-4029 printed. 40 MediCredits delivered to Ramesh K. ₹15.00 logged to Suresh's register.
+    </p>
+</div>
+</div>
+<script>
+  (function initVerifyScan() {
+    let strips = 2;
+    const qtyVal = document.getElementById('qty-val');
+    const tabCount = document.getElementById('tab-count');
+    const creditPreview = document.getElementById('customer-credits');
+    const commPreview = document.getElementById('pharm-commission');
+    const plusBtn = document.getElementById('qty-plus');
+    const minusBtn = document.getElementById('qty-minus');
+    const sealBtn = document.getElementById('seal-btn');
+    const sealModal = document.getElementById('seal-modal');
+    const closeModal = document.getElementById('close-modal');
+    const timerElem = document.getElementById('session-timer');
+    const flashBtn = document.getElementById('flash-toggle');
+
+    function updateMetrics() {
+      if (qtyVal) qtyVal.textContent = strips;
+      if (tabCount) tabCount.textContent = (strips * 10) + ' Tablets (' + strips + ' strips)';
+      if (creditPreview) creditPreview.textContent = '+' + (strips * 20) + ' MC';
+      if (commPreview) commPreview.textContent = '+₹' + (strips * 7.50).toFixed(2);
+    }
+
+    if (plusBtn) {
+      plusBtn.addEventListener('click', function() {
+        if (strips < 20) {
+          strips++;
+          updateMetrics();
+        }
+      });
+    }
+
+    if (minusBtn) {
+      minusBtn.addEventListener('click', function() {
+        if (strips > 1) {
+          strips--;
+          updateMetrics();
+        }
+      });
+    }
+
+    if (sealBtn && sealModal) {
+      sealBtn.addEventListener('click', function() {
+        sealModal.classList.remove('hidden');
+        sealModal.classList.add('flex');
+        setTimeout(function() {
+          sealModal.classList.add('hidden');
+          sealModal.classList.remove('flex');
+        }, 4000);
+      });
+    }
+
+    if (closeModal && sealModal) {
+      closeModal.addEventListener('click', function() {
+        sealModal.classList.add('hidden');
+        sealModal.classList.remove('flex');
+      });
+    }
+
+    if (flashBtn) {
+      flashBtn.addEventListener('click', function() {
+        flashBtn.classList.toggle('text-secondary-fixed');
+      });
+    }
+
+    // Elapsed timer counter
+    let elapsed = 24;
+    setInterval(function() {
+      elapsed++;
+      const mins = String(Math.floor(elapsed / 60)).padStart(2, '0');
+      const secs = String(elapsed % 60).padStart(2, '0');
+      if (timerElem) {
+        timerElem.textContent = mins + ':' + secs;
+      }
+    }, 1000);
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,41,66,0.06)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Dashboard</span></a><a aria-current="page" class="relative flex flex-col items-center justify-center w-16 h-12 transition-colors text-secondary" data-path="verify-scan" href="#"><span class="material-symbols-outlined text-[24px] text-secondary">qr_code_scanner</span><span class="font-label-sm text-[11px] leading-tight text-secondary font-bold mt-0.5">Verify Scan</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="vault-storage" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Storage</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="courier-pickups" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Pickups</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="staff-commission" href="#"><span class="material-symbols-outlined text-[22px]">payments</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Commission</span></a></div></nav><script src="navigation.js"></script></body></html>

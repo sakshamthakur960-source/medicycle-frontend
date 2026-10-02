@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f8f9ff;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-background": "#0b1c30", "on-primary-container": "#7991af", "tertiary": "#220e00", "primary-fixed": "#d1e4ff", "inverse-primary": "#b0c9e8", "primary-fixed-dim": "#b0c9e8", "on-primary-fixed-variant": "#314863", "on-secondary-fixed-variant": "#005137", "on-primary": "#ffffff", "on-primary-fixed": "#011d35", "inverse-on-surface": "#eaf1ff", "on-tertiary-fixed-variant": "#6e3900", "primary": "#001428", "surface-tint": "#49607c", "on-error-container": "#93000a", "surface-variant": "#d3e4fe", "surface-container-high": "#dce9ff", "on-secondary-container": "#00714e", "surface-bright": "#f8f9ff", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "inverse-surface": "#213145", "on-secondary-fixed": "#002114", "surface": "#f8f9ff", "secondary-fixed-dim": "#68dba9", "tertiary-fixed-dim": "#ffb77d", "on-secondary": "#ffffff", "error": "#ba1a1a", "secondary": "#006c4a", "surface-dim": "#cbdbf5", "on-error": "#ffffff", "surface-container-low": "#eff4ff", "surface-container-highest": "#d3e4fe", "outline-variant": "#c3c6ce", "on-tertiary-container": "#d77503", "outline": "#74777e", "primary-container": "#0f2942", "secondary-fixed": "#85f8c4", "tertiary-fixed": "#ffdcc3", "on-surface-variant": "#43474d", "on-tertiary-fixed": "#2f1500", "surface-container-lowest": "#ffffff", "background": "#f8f9ff", "surface-container": "#e5eeff", "tertiary-container": "#401f00", "on-surface": "#0b1c30", "secondary-container": "#82f5c1" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-desktop": "3rem", "space-md": "1rem", "space-xl": "2rem", "margin-tablet": "2rem", "space-2xl": "3rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Inter"], "display-lg": ["Inter"], "headline-lg-mobile": ["Inter"], "label-lg": ["Inter"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"] }, fontSize: { "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["16px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-12 h-12 -ml-space-xs flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Brand logo. - Primary color: #0f2942
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wbtz-4h-65Sii-69tBO_6kW5mW5G8xo6OAwWx1rLcjbZ7grAUbNuvfDYN1Jn7aQ4QdRAkAN6qJv0nSI1DZiY7dpfLHL6WejdI3LFiuXcYOiPhhvN3VpgH5kwMtt12aZAL5h2LawXQjoSfnaRlFrG-Ca3N97y6a0DZJzfeoac5wKez27zCM73LczOJviYmqH-tKPHVRtRrpyYOBYV1yYm06U7gCFecSWDt7Ca_F7ClPqayOjsOKZd4vVDQ"/><div class="flex flex-col ml-space-xs"><span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">MediCycle</span><h1 class="font-headline-sm text-headline-sm text-on-surface leading-tight truncate max-w-[150px] sm:max-w-xs">Slot Coordination</h1></div></div><div class="flex items-center gap-space-xs"><button aria-label="Notifications" class="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VqRmRwdl70b0iiMBNURDhLFphntwVElGvL6Cq98nsqIhbBlkdrFzsdw2PhqxdVFdJSCpsSt0CKPFTptuMW29BIsllmlCIdkRNYfFrJ2ZI0xljkut_ifEg4HJR-qxjdH6TWOfWwX32c2KAX3THk6QIHB9ROXgj8qsuN-SYY_XBkbgixI3Rtd0tJRizPhmP4vGHGJEd7O4ss-iktt0PGmVSMqbLFLFFM051rYyUgQE_UnVX0Jndq8CM_Pgbj"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full">
+<!-- Progress Indicator -->
+<div class="px-gutter pt-space-md pb-space-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+        Step 2 of 4: Slot Coordination
+      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">50% Completed</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-secondary h-full rounded-full transition-all duration-500 ease-out" style="width: 50%;"></div>
+</div>
+</div>
+<div class="px-gutter flex flex-col gap-space-md pb-space-xl">
+<!-- Eco-Routing Highlight Card -->
+<div class="relative overflow-hidden rounded-xl bg-secondary-container text-on-secondary-container p-space-md shadow-sm">
+<div class="flex items-start gap-space-sm relative z-10">
+<div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[22px]">bolt</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-secondary-container leading-snug">
+              Green Route Consolidation
+            </h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">compost</span> -1.4 kg CO₂
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-secondary-container/90 mt-1 leading-relaxed">
+            An EV courier van (<strong class="font-semibold">Manoj Kumar</strong> · Tata Ace EV) is already scheduled in <span class="underline decoration-secondary/40 font-medium">Kadubeesanahalli / Marathahalli corridor</span> delivering e-pharmacy orders. Pairing your reverse batch eliminates dedicated fleet emissions!
+          </p>
+</div>
+</div>
+<!-- Courier Mini Profile & Route Badge -->
+<div class="mt-space-sm pt-space-sm bg-surface-container-lowest/80 rounded-lg p-space-sm flex items-center justify-between gap-2 shadow-sm text-on-surface">
+<div class="flex items-center gap-2 min-w-0">
+<img class="w-9 h-9 rounded-full object-cover shrink-0" data-alt="A clean portrait photo of Manoj Kumar, a friendly Indian courier specialist wearing a smart dark teal green eco-delivery uniform, smiling warmly, soft natural outdoor morning lighting, crisp modern professional demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC12XsE7WY2e9iUppWhvbVTo5rH1MV8XC1aP318hi-E8JxyjBXIyqjcdbdu5JpuMUvjkKMJASalFCflyYFu13iyAMGkV13puqxzZ2ViqJ0HMWpjCWXqAbLHYT7Uihy-nT7F2UO0-wu67HH1c8TzdTeSjNh_NQl_u6P-okZyOEeV4tPaG7rsaqAbovw4rlItjlNlF8Q3Tmr2Ig4JmhSURkkRmKhRBnoKIwBclTtOrSC3mmWKAUmDkgYlkQ"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Manoj Kumar · Tata Ace EV #KA-03-EV-8419</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span> 4.9 ★ · 380+ Safe Pharma Disposals
+            </span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shrink-0 font-medium">1.2 km away</span>
+</div>
+</div>
+<!-- Active Corridor Map Snippet -->
+<div class="rounded-xl overflow-hidden shadow-sm bg-surface-container relative">
+<div class="w-full h-36 bg-cover bg-center" data-location="Kadubeesanahalli, Bengaluru, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWX9VlIf7eeZyuQySE_QC3S7g8RM7ArJxCsFzYKE3bfoP9DQAsl69HsWv7j_JoL4BKdehyJMRdhHiBCZ0d_TfrFhie0JyzRpDFvK-5KoFdvY_bSJA5ETLB2zGJOaGtF_5UWiYsltfCw_yJvNf64EjC4mRqwe4kqlR5ArnKSu_NoFOAwAEhEWyzSrKcMVokjRXIlKG90UnyZtzkK5YxSoaUW0rxJHleuq5P6bVVgVvfzuNZoDtsK7ytfg')">
+<div class="w-full h-full bg-gradient-to-t from-primary/80 via-primary/30 to-transparent flex flex-col justify-end p-space-sm text-on-primary">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">electric_bolt</span>
+<span class="font-label-md text-label-md text-on-primary">Live Corridor Loop: Sector 4 ➔ Hoodi Hub</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-lowest/30 backdrop-blur-sm text-on-primary font-medium">Synced</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Date Tabs -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-headline-sm text-headline-sm text-on-surface">Select Collection Window</label>
+<div class="grid grid-cols-3 gap-space-xs" role="tablist">
+<button class="date-tab active flex flex-col items-center justify-center p-space-sm rounded-xl bg-primary text-on-primary shadow-sm text-center transition-all" onclick="selectDateTab(this)" type="button">
+<span class="font-label-sm text-label-sm opacity-90">Today</span>
+<span class="font-label-lg text-label-lg font-bold">Oct 15</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-semibold mt-0.5">Recommended</span>
+</button>
+<button class="date-tab flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high text-center transition-all" onclick="selectDateTab(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tomorrow</span>
+<span class="font-label-lg text-label-lg font-bold">Oct 16</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">2 EV slots</span>
+</button>
+<button class="date-tab flex flex-col items-center justify-center p-space-sm rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high text-center transition-all" onclick="selectDateTab(this)" type="button">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thu</span>
+<span class="font-label-lg text-label-lg font-bold">Oct 17</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Open slots</span>
+</button>
+</div>
+</div>
+<!-- Time Slot Radio Cards -->
+<div class="flex flex-col gap-space-sm" id="slot-container">
+<!-- Slot 1: Eco Route Active (Selected) -->
+<label class="slot-card relative flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all border-0 shadow-[0_0_0_2px_#006c4a] bg-secondary-container/20">
+<input checked="" class="sr-only" name="delivery_slot" onchange="handleSlotSelection(this)" type="radio" value="slot_1"/>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 slot-indicator">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">2:00 PM – 4:00 PM</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">energy_savings_leaf</span> Active Cluster
+          </span>
+</div>
+<div class="pl-8 flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-medium">🌿 Zero Extra Carbon · EV Cluster Route Active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Arrives between 2:15 PM and 2:40 PM based on live corridor transit</span>
+</div>
+</label>
+<!-- Slot 2: Standard Route -->
+<label class="slot-card relative flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all">
+<input class="sr-only" name="delivery_slot" onchange="handleSlotSelection(this)" type="radio" value="slot_2"/>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center shrink-0 slot-indicator">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">5:00 PM – 7:00 PM</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+            Standard Run
+          </span>
+</div>
+<div class="pl-8 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">CNG Flex Van · Standard Batching Route</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Expected arrival window ~5:45 PM</span>
+</div>
+</label>
+<!-- Slot 3: Tomorrow Morning -->
+<label class="slot-card relative flex flex-col gap-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer transition-all">
+<input class="sr-only" name="delivery_slot" onchange="handleSlotSelection(this)" type="radio" value="slot_3"/>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-transparent flex items-center justify-center shrink-0 slot-indicator">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Tomorrow 10:00 AM – 12:00 PM</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium">
+            EV Morning Run
+          </span>
+</div>
+<div class="pl-8 flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-medium">🌱 Zero Extra Miles · Early Neighborhood Sweep</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">High efficiency schedule before traffic peaks</span>
+</div>
+</label>
+</div>
+<!-- Handover Preferences -->
+<div class="flex flex-col gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Doorstep Handover Mode</h3>
+<div class="flex flex-col gap-space-xs">
+<!-- Option 1: OTP In Person (Default) -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer">
+<input checked="" class="mt-1 w-5 h-5 accent-secondary" name="handover_mode" type="radio" value="otp"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-secondary text-[18px]">pin</span>
+              Handover in-person with OTP
+              <span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-medium">High Credits</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Instant scale weigh-in at your door. You verify the tamper seal code and claim 150 Green Points immediately.
+            </p>
+</div>
+</label>
+<!-- Option 2: Contactless Security Gate Drop -->
+<label class="flex items-start gap-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm cursor-pointer">
+<input class="mt-1 w-5 h-5 accent-secondary" name="handover_mode" type="radio" value="gate_drop"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">shield</span>
+              Contactless Security Gate Drop
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-snug">
+              Leave with your community gate guard. Manoj photos the tamper-sealed bag and verifies pickup remotely.
+            </p>
+</div>
+</label>
+</div>
+</div>
+<!-- Special Courier Instructions -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-headline-sm text-headline-sm text-on-surface" for="courier-note">Courier Instructions</label>
+<button class="text-secondary font-label-sm text-label-sm hover:underline" onclick="document.getElementById('courier-note').focus()" type="button">Edit</button>
+</div>
+<div class="relative">
+<textarea class="w-full rounded-xl bg-surface-container-lowest p-space-sm font-body-sm text-body-sm text-on-surface shadow-sm focus:outline-none focus:ring-0 focus:shadow-[0_0_0_2px_#006c4a] transition-all resize-none" id="courier-note" placeholder="Provide gate entry notes, flat number or receptionist instructions..." rows="2">Ring doorbell #804, or leave with Tower B reception if in work meetings.</textarea>
+<div class="absolute right-2 bottom-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+</div>
+</div>
+</div>
+<!-- Verification / Neutralization Summary Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm text-on-surface">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span>
+          Certified Compliance Pathway
+        </span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">CPCB Verified</span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start justify-between gap-2">
+<span class="flex items-center gap-1 text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[16px]">warehouse</span> Destination:
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface text-right font-semibold">Hoodi Aggregation &amp; Neutralization Center (CPCB Hub #02)</span>
+</div>
+<div class="flex items-start justify-between gap-2">
+<span class="flex items-center gap-1 text-on-surface-variant shrink-0">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span> Fleet Partner:
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface text-right font-semibold">Delhivery Green EV Fleet · Net Zero Cluster</span>
+</div>
+</div>
+<!-- Trust Assurance Strip -->
+<div class="mt-space-xs pt-space-xs flex items-center justify-center gap-2 text-secondary font-label-sm text-label-sm bg-secondary-container/40 p-2 rounded-lg">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span>Guaranteed safe high-temperature incineration without aquifer runoff.</span>
+</div>
+</div>
+<!-- Bottom Action CTA -->
+<div class="pt-space-xs pb-space-sm">
+<button class="w-full min-h-[52px] bg-primary text-on-primary rounded-xl font-label-lg text-label-lg flex items-center justify-center gap-space-xs shadow-md active:scale-[0.98] transition-all hover:bg-on-primary-fixed-variant" type="button">
+<span>Review Packaging &amp; Tamper Seal Guidelines</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-2">
+        Step 3 of 4: Tamper Seal &amp; Hazardous Segregation
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function selectDateTab(selectedBtn) {
+    const tabs = document.querySelectorAll('.date-tab');
+    tabs.forEach(tab => {
+      tab.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+      tab.classList.add('bg-surface-container', 'text-on-surface');
+      const subLabels = tab.querySelectorAll('span');
+      if (subLabels[0]) subLabels[0].className = 'font-label-sm text-label-sm text-on-surface-variant';
+      if (subLabels[2]) subLabels[2].className = 'font-label-sm text-label-sm text-on-surface-variant mt-0.5';
+    });
+
+    selectedBtn.classList.remove('bg-surface-container', 'text-on-surface');
+    selectedBtn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'active');
+    const activeSubLabels = selectedBtn.querySelectorAll('span');
+    if (activeSubLabels[0]) activeSubLabels[0].className = 'font-label-sm text-label-sm opacity-90';
+    if (activeSubLabels[2]) activeSubLabels[2].className = 'font-label-sm text-label-sm text-secondary-fixed font-semibold mt-0.5';
+  }
+
+  function handleSlotSelection(radio) {
+    const cards = document.querySelectorAll('.slot-card');
+    cards.forEach(card => {
+      card.style.boxShadow = '';
+      card.classList.remove('bg-secondary-container/20');
+      const indicator = card.querySelector('.slot-indicator');
+      if (indicator) {
+        indicator.classList.remove('bg-secondary', 'text-on-secondary');
+        indicator.classList.add('bg-surface-container-highest', 'text-transparent');
+      }
+    });
+
+    const currentCard = radio.closest('.slot-card');
+    if (currentCard) {
+      currentCard.style.boxShadow = '0 0 0 2px #006c4a';
+      currentCard.classList.add('bg-secondary-container/20');
+      const indicator = currentCard.querySelector('.slot-indicator');
+      if (indicator) {
+        indicator.classList.remove('bg-surface-container-highest', 'text-transparent');
+        indicator.classList.add('bg-secondary', 'text-on-secondary');
+      }
+    }
+  }
+</script></main><script src="navigation.js"></script></body></html>

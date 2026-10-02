@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f8f9ff;color:#0b1c30;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#b0c9e8", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "primary": "#001428", "on-primary-fixed-variant": "#314863", "secondary-fixed": "#85f8c4", "surface-dim": "#cbdbf5", "surface": "#f8f9ff", "on-secondary-container": "#00714e", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "on-surface-variant": "#43474d", "on-primary": "#ffffff", "secondary": "#006c4a", "primary-fixed-dim": "#b0c9e8", "inverse-surface": "#213145", "tertiary-fixed-dim": "#ffb77d", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "error": "#ba1a1a", "on-surface": "#0b1c30", "secondary-fixed-dim": "#68dba9", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdcc3", "primary-fixed": "#d1e4ff", "surface-container-high": "#dce9ff", "surface-tint": "#49607c", "on-tertiary-fixed": "#2f1500", "on-primary-fixed": "#011d35", "tertiary-container": "#401f00", "surface-container-highest": "#d3e4fe", "secondary-container": "#82f5c1", "error-container": "#ffdad6", "on-secondary-fixed": "#002114", "tertiary": "#220e00", "primary-container": "#0f2942", "on-tertiary-container": "#d77503", "on-secondary-fixed-variant": "#005137", "on-primary-container": "#7991af", "outline": "#74777e", "outline-variant": "#c3c6ce", "on-tertiary-fixed-variant": "#6e3900", "on-error-container": "#93000a", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "margin-tablet": "2rem", "margin": "1rem", "margin-desktop": "3rem", "gutter": "1rem", "space-xs": "0.25rem", "space-2xl": "3rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem" }, fontFamily: { "body-md": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "body-md": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-lg": ["16px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,41,66,0.06)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="MediCycle Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V3mTDJ4R_42jbFdBysqUKZxB3sdP5yov929Tw-i5ALnpqlu6JikpN177Bx_doC9X6qVTM-PCLeyx9rOcimPS1tLlGaPMsyd5HJrbqilKFimXqu0GPVU7u8KngiWONi1CY_YlSb1WtasLeh1t9cc9PGR64jK8eu0S_TtpBsrEwIxzl_1wIw-6aRd6KVxYegFanRePomF2-tz9-pSEBvpqqkawFSLRlH8Rw-IGUGP4c3dSuSLvwspXFiq1FI"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight tracking-tight">MediCycle</span><button class="flex items-center gap-space-xs text-left group min-h-[28px] focus:outline-none" type="button"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0">location_on</span><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors truncate max-w-[130px]">Indiranagar, BLR</span><span class="material-symbols-outlined text-[16px] text-outline shrink-0">expand_more</span></button></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface"></span></button><a class="w-12 h-12 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity focus:outline-none" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbP6coIcIuHpCZsNZ9krMwVnjjeyIERfdVnujl4t9x46CuSQAtB75G3fSBnZBzaeDEkbZVzsMlVRejZPNxQEhWyVpMNb98A45AxrovHibC9VAvRP0xwr8tlR4m8XAh2dPyARIqCj6Od7WDTClCQZn-chJaH0-UJvXLdyjljeYWHUc-ui6YPzi08I-ess4QWkV-6ztkkHKYJ8q4T7MQWcSTzngeKm5b2XTvDcXa0l2dEmtny46Q21tiXg"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="sr-only">Return Medicines</div><div class="flex flex-col w-full">
+<div class="px-margin pt-space-md pb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">1</span>
+<span class="font-label-md text-label-md text-secondary">Step 1 of 3</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-2 py-0.5 rounded-full">Safe Disposal Flow</span>
+</div>
+<div class="px-margin mb-space-md">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Add Items &amp; Choose Route</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ensure pharmaceuticals stay clear of water tables and landfills.</p>
+</div>
+<div class="px-margin flex items-center gap-2 mb-space-lg">
+<div class="flex-1 flex items-center gap-1.5">
+<div class="h-1.5 flex-1 rounded-full bg-secondary"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-highest"></div>
+<div class="h-1.5 flex-1 rounded-full bg-surface-container-highest"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Cataloging</span>
+</div>
+<section class="px-margin mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-lg text-label-lg text-primary">Disposal Channel</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+        Insured Chain
+      </span>
+</div>
+<div class="flex flex-col gap-space-sm" id="channel-container">
+<div class="cursor-pointer transition-all rounded-xl p-space-md bg-secondary-container/30 shadow-md ring-2 ring-secondary flex flex-col gap-space-xs" id="channel-dropoff" onclick="selectChannel('dropoff')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_pharmacy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Pharmacy Drop-off</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Instant</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Recommended for 1-5 items</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0" id="radio-dropoff">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-12">
+          Hand in to nearest pharmacist counter, get instant verification and credits.
+        </p>
+<div class="pl-12 flex items-center gap-space-md pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">near_me</span>
+            Apollo Pharmacy (350m)
+          </span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">electric_bolt</span>
+            Zero wait
+          </span>
+</div>
+</div>
+<div class="cursor-pointer transition-all rounded-xl p-space-md bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs hover:bg-surface-container-low" id="channel-pickup" onclick="selectChannel('pickup')">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-primary">Doorstep Reverse Pickup</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Free above 3 items</span>
+</div>
+</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-transparent shrink-0" id="radio-pickup">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-12">
+          Collector visits your address during scheduled route hours with tamper-evident seal bags.
+        </p>
+<div class="pl-12 flex items-center gap-space-md pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">schedule</span>
+            Slots available tomorrow
+          </span>
+</div>
+</div>
+</div>
+</section>
+<section class="px-margin mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex p-1 bg-surface-container rounded-lg mb-space-md">
+<button class="flex-1 py-2 rounded-md font-label-md text-label-md text-on-secondary bg-secondary shadow-sm flex items-center justify-center gap-1.5 transition-all" id="tab-scan" onclick="switchEntryTab('scan')">
+<span class="material-symbols-outlined text-[18px]">document_scanner</span>
+          Scan Barcode / Strip
+        </button>
+<button class="flex-1 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary flex items-center justify-center gap-1.5 transition-all" id="tab-manual" onclick="switchEntryTab('manual')">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+          Enter Manually
+        </button>
+</div>
+<div class="flex flex-col items-center" id="panel-scan">
+<div class="w-full relative aspect-[16/10] bg-primary-container rounded-xl overflow-hidden flex flex-col items-center justify-center p-space-md shadow-inner text-center">
+<div class="absolute inset-4 rounded-lg flex flex-col justify-between pointer-events-none">
+<div class="flex justify-between w-full">
+<span class="w-5 h-5 border-t-2 border-l-2 border-secondary-fixed"></span>
+<span class="w-5 h-5 border-t-2 border-r-2 border-secondary-fixed"></span>
+</div>
+<div class="w-full h-0.5 bg-gradient-to-r from-transparent via-secondary-fixed to-transparent opacity-75 animate-pulse"></div>
+<div class="flex justify-between w-full">
+<span class="w-5 h-5 border-b-2 border-l-2 border-secondary-fixed"></span>
+<span class="w-5 h-5 border-b-2 border-r-2 border-secondary-fixed"></span>
+</div>
+</div>
+<div class="z-10 flex flex-col items-center gap-2 max-w-[220px]">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest/20 backdrop-blur-md flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary">
+              Align medicine strip barcode or box QR inside frame
+            </p>
+</div>
+</div>
+<button class="w-full mt-space-md min-h-[48px] py-2.5 px-space-md rounded-xl bg-surface-container-low text-primary font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">photo_camera</span>
+          Take Photo of Strip
+        </button>
+</div>
+<div class="flex flex-col gap-space-md" id="panel-manual">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="med-name">Medicine Name &amp; Formulation</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[20px]">medication</span>
+<input class="w-full min-h-[52px] pl-10 pr-3 rounded-lg bg-surface text-primary font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-secondary" id="med-name" type="text" value="Metformin 500mg (Glycomet)"/>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="batch-exp">Expiry / Batch</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">calendar_today</span>
+<input class="w-full min-h-[52px] pl-9 pr-2 rounded-lg bg-surface text-primary font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-secondary" id="batch-exp" type="text" value="EXP: 08/2024"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Quantity Count</label>
+<div class="flex items-center justify-between min-h-[52px] px-2 rounded-lg bg-surface">
+<button class="w-8 h-8 rounded-md bg-surface-container-high text-primary flex items-center justify-center font-headline-sm hover:bg-surface-container-highest" onclick="adjustQty(-1)" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-label-md text-label-md text-primary" id="qty-val">2 Strips</span>
+<button class="w-8 h-8 rounded-md bg-secondary text-on-secondary flex items-center justify-center font-headline-sm hover:opacity-90" onclick="adjustQty(1)" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant">Packaging State</label>
+<div class="flex flex-wrap gap-1.5" id="chip-container">
+<button class="px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary transition-colors" onclick="toggleChip(this)" type="button">
+              Sealed Blister Strip
+            </button>
+<button class="px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="toggleChip(this)" type="button">
+              Partially Used Foil
+            </button>
+<button class="px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="toggleChip(this)" type="button">
+              Unopened Bottle
+            </button>
+<button class="px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors" onclick="toggleChip(this)" type="button">
+              Inhaler / Device
+            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-margin mb-space-xl">
+<div class="rounded-xl p-space-md bg-surface-container-low shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-md text-label-md">Eligible for Safe Destruction</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">eco</span>
+<span>+40 MediCredits</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md py-1">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">water_drop</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">120 L</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Groundwater guarded</p>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">recycling</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-primary">100%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Material recovered</p>
+</div>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-start gap-2">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5">policy</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-snug">
+          Items will be cataloged into the national environmental reverse-logistics manifest. Resale is strictly impossible and legally barred.
+        </p>
+</div>
+</div>
+</section>
+<div class="px-margin mb-space-md">
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-lowest">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">inventory_2</span>
+<span class="font-label-sm text-label-sm text-primary">Manifest preview: 1 item staged</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" type="button">
+        + Add Another Drug
+      </button>
+</div>
+</div>
+<footer class="mt-auto px-margin pt-space-xs pb-space-md flex flex-col items-center gap-space-sm">
+<button class="w-full min-h-[52px] rounded-xl bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-lg shadow-secondary/20 transition-all active:scale-[0.98]" type="button">
+<span>Proceed to Channel Confirmation</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary flex items-center gap-1 py-1" href="#">
+<span class="material-symbols-outlined text-[16px]">help_outline</span>
+      Need help identifying medication?
+    </a>
+</footer>
+</div>
+<script>
+  let currentQty = 2;
+
+  function adjustQty(delta) {
+    currentQty = Math.max(1, currentQty + delta);
+    const label = document.getElementById('qty-val');
+    if (label) {
+      label.textContent = currentQty + (currentQty === 1 ? ' Strip' : ' Strips');
+    }
+  }
+
+  function selectChannel(type) {
+    const dropoffCard = document.getElementById('channel-dropoff');
+    const pickupCard = document.getElementById('channel-pickup');
+    const radioDropoff = document.getElementById('radio-dropoff');
+    const radioPickup = document.getElementById('radio-pickup');
+
+    if (type === 'dropoff') {
+      dropoffCard.className = 'cursor-pointer transition-all rounded-xl p-space-md bg-secondary-container/30 shadow-md ring-2 ring-secondary flex flex-col gap-space-xs';
+      pickupCard.className = 'cursor-pointer transition-all rounded-xl p-space-md bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs hover:bg-surface-container-low';
+      
+      radioDropoff.className = 'w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0';
+      radioDropoff.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+      
+      radioPickup.className = 'w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-transparent shrink-0';
+      radioPickup.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+    } else {
+      pickupCard.className = 'cursor-pointer transition-all rounded-xl p-space-md bg-secondary-container/30 shadow-md ring-2 ring-secondary flex flex-col gap-space-xs';
+      dropoffCard.className = 'cursor-pointer transition-all rounded-xl p-space-md bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs hover:bg-surface-container-low';
+      
+      radioPickup.className = 'w-6 h-6 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0';
+      radioPickup.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+      
+      radioDropoff.className = 'w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-transparent shrink-0';
+      radioDropoff.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span>';
+    }
+  }
+
+  function switchEntryTab(tab) {
+    const tabScan = document.getElementById('tab-scan');
+    const tabManual = document.getElementById('tab-manual');
+    const panelScan = document.getElementById('panel-scan');
+    const panelManual = document.getElementById('panel-manual');
+
+    if (tab === 'scan') {
+      tabScan.className = 'flex-1 py-2 rounded-md font-label-md text-label-md text-on-secondary bg-secondary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+      tabManual.className = 'flex-1 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary flex items-center justify-center gap-1.5 transition-all';
+      panelScan.classList.remove('hidden');
+      panelManual.classList.add('hidden');
+    } else {
+      tabManual.className = 'flex-1 py-2 rounded-md font-label-md text-label-md text-on-secondary bg-secondary shadow-sm flex items-center justify-center gap-1.5 transition-all';
+      tabScan.className = 'flex-1 py-2 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-primary flex items-center justify-center gap-1.5 transition-all';
+      panelManual.classList.remove('hidden');
+      panelScan.classList.add('hidden');
+    }
+  }
+
+  function toggleChip(button) {
+    const container = document.getElementById('chip-container');
+    const buttons = container.querySelectorAll('button');
+    buttons.forEach(btn => {
+      btn.className = 'px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors';
+    });
+    button.className = 'px-3 py-1.5 rounded-full font-label-sm text-label-sm bg-secondary text-on-secondary transition-colors';
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,41,66,0.08)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-20 px-space-xs max-w-md mx-auto"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-colors text-secondary" data-path="return-medicines" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">cycle</span><span class="absolute -top-1 -right-2 px-1 py-0.2 bg-secondary text-on-secondary rounded-full font-label-sm text-[9px] leading-tight">Eco</span></div><span class="font-label-sm text-label-sm mt-1">Return</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="eco-wallet" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-sm text-label-sm mt-1">Wallet</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="disposal-history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm mt-1">History</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm mt-1">Profile</span></a></div></nav><script src="navigation.js"></script></body></html>

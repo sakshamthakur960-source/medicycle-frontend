@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#f8f9ff;color:#0b1c30;font-family:'Inter',sans-serif;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-primary": "#b0c9e8", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "primary": "#001428", "on-primary-fixed-variant": "#314863", "secondary-fixed": "#85f8c4", "surface-dim": "#cbdbf5", "surface": "#f8f9ff", "on-secondary-container": "#00714e", "surface-container-low": "#eff4ff", "background": "#f8f9ff", "inverse-on-surface": "#eaf1ff", "on-surface-variant": "#43474d", "on-primary": "#ffffff", "secondary": "#006c4a", "primary-fixed-dim": "#b0c9e8", "inverse-surface": "#213145", "tertiary-fixed-dim": "#ffb77d", "on-background": "#0b1c30", "surface-variant": "#d3e4fe", "error": "#ba1a1a", "on-surface": "#0b1c30", "secondary-fixed-dim": "#68dba9", "on-secondary": "#ffffff", "tertiary-fixed": "#ffdcc3", "primary-fixed": "#d1e4ff", "surface-container-high": "#dce9ff", "surface-tint": "#49607c", "on-tertiary-fixed": "#2f1500", "on-primary-fixed": "#011d35", "tertiary-container": "#401f00", "surface-container-highest": "#d3e4fe", "secondary-container": "#82f5c1", "error-container": "#ffdad6", "on-secondary-fixed": "#002114", "tertiary": "#220e00", "primary-container": "#0f2942", "on-tertiary-container": "#d77503", "on-secondary-fixed-variant": "#005137", "on-primary-container": "#7991af", "outline": "#74777e", "outline-variant": "#c3c6ce", "on-tertiary-fixed-variant": "#6e3900", "on-error-container": "#93000a", "surface-container": "#e5eeff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "margin-tablet": "2rem", "margin": "1rem", "margin-desktop": "3rem", "gutter": "1rem", "space-xs": "0.25rem", "space-2xl": "3rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem" }, fontFamily: { "body-md": ["Inter"], "headline-lg": ["Inter"], "headline-sm": ["Inter"], "label-lg": ["Inter"], "display-lg": ["Inter"], "body-lg": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-lg-mobile": ["Inter"], "label-sm": ["Inter"] }, fontSize: { "body-md": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "label-lg": ["16px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "500" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen flex flex-col selection:bg-secondary selection:text-on-secondary"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,41,66,0.06)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="MediCycle Logo" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1V3mTDJ4R_42jbFdBysqUKZxB3sdP5yov929Tw-i5ALnpqlu6JikpN177Bx_doC9X6qVTM-PCLeyx9rOcimPS1tLlGaPMsyd5HJrbqilKFimXqu0GPVU7u8KngiWONi1CY_YlSb1WtasLeh1t9cc9PGR64jK8eu0S_TtpBsrEwIxzl_1wIw-6aRd6KVxYegFanRePomF2-tz9-pSEBvpqqkawFSLRlH8Rw-IGUGP4c3dSuSLvwspXFiq1FI"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary truncate leading-tight tracking-tight">MediCycle</span><button class="flex items-center gap-space-xs text-left group min-h-[28px] focus:outline-none" type="button"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0">location_on</span><span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors truncate max-w-[130px]">Indiranagar, BLR</span><span class="material-symbols-outlined text-[16px] text-outline shrink-0">expand_more</span></button></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="relative w-12 h-12 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface"></span></button><a class="w-12 h-12 flex items-center justify-center rounded-full hover:opacity-90 transition-opacity focus:outline-none" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbP6coIcIuHpCZsNZ9krMwVnjjeyIERfdVnujl4t9x46CuSQAtB75G3fSBnZBzaeDEkbZVzsMlVRejZPNxQEhWyVpMNb98A45AxrovHibC9VAvRP0xwr8tlR4m8XAh2dPyARIqCj6Od7WDTClCQZn-chJaH0-UJvXLdyjljeYWHUc-ui6YPzi08I-ess4QWkV-6ztkkHKYJ8q4T7MQWcSTzngeKm5b2XTvDcXa0l2dEmtny46Q21tiXg"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="sr-only">Home</div><div class="flex flex-col w-full px-margin pb-6 gap-y-4">
+<!-- Top Greeting & Live Eco Impact Strip -->
+<section class="flex flex-col gap-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary flex items-center gap-1 font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+          Eco-Citizen Safe Return
+        </span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface truncate">
+          Good morning, Ramesh
+        </h1>
+</div>
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 shadow-sm text-primary">
+<span class="material-symbols-outlined text-[24px]">eco</span>
+</div>
+</div>
+<!-- Impact Ribbon -->
+<div class="w-full bg-secondary-container rounded-xl p-3 flex items-center gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-secondary shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<p class="font-label-md text-label-md text-on-secondary-container leading-snug">
+          2.4 kg Waste Diverted • 140 Credits Earned
+        </p>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant truncate">
+          Groundwater protected in Indiranagar watershed
+        </span>
+</div>
+</div>
+</section>
+<!-- Primary MediCredit Balance Card (High Elevation / Organic Tech feel) -->
+<section class="relative w-full rounded-2xl bg-primary-container text-on-primary p-5 shadow-xl overflow-hidden">
+<!-- Guilloche / Ambient wave graphic -->
+<div class="absolute -right-10 -bottom-10 w-48 h-48 opacity-15 pointer-events-none">
+<svg class="w-full h-full text-secondary-fixed" fill="none" viewbox="0 0 200 200">
+<circle cx="100" cy="100" r="90" stroke="currentColor" stroke-dasharray="4 4" stroke-width="2"></circle>
+<circle cx="100" cy="100" r="70" stroke="currentColor" stroke-width="2"></circle>
+<circle cx="100" cy="100" r="50" stroke="currentColor" stroke-dasharray="8 6" stroke-width="3"></circle>
+<path d="M20 100 Q 100 20 180 100 T 100 180" stroke="currentColor" stroke-width="2"></path>
+<path d="M40 100 Q 100 40 160 100 T 100 160" stroke="currentColor" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col gap-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary/30 flex items-center justify-center text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-surface-variant font-medium tracking-wide uppercase">
+            Verified Eco Balance
+          </span>
+</div>
+<span class="bg-surface-container-lowest/15 backdrop-blur-md px-2.5 py-0.5 rounded-full font-label-sm text-label-sm text-surface-bright flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span> Active
+        </span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-primary font-bold tracking-tight">420</span>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed font-semibold">MediCredits</span>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">
+          Worth approx. <strong class="text-surface-bright">₹420</strong> across Apollo, MedPlus &amp; City Waste Co.
+        </p>
+</div>
+<!-- Action Buttons with senior-friendly 48px touch targets -->
+<div class="flex items-center gap-3 pt-1">
+<button class="flex-1 min-h-[48px] px-4 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-secondary/90 active:scale-[0.98] transition-all shadow-md" type="button">
+<span class="material-symbols-outlined text-[20px]">redeem</span>
+          Redeem Credits
+        </button>
+<button class="min-h-[48px] px-4 rounded-xl bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 active:scale-[0.98] text-surface-bright font-label-lg text-label-lg flex items-center justify-center gap-1.5 backdrop-blur-md transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+          Pass
+        </button>
+</div>
+</div>
+</section>
+<!-- Primary Quick Action Cards (Dual Return Channel) -->
+<section class="flex flex-col gap-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary">Return Unused Medicine</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to initiate</span>
+</div>
+<!-- Drop-off Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col gap-3 group cursor-pointer active:scale-[0.99]" role="button" tabindex="0">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">local_pharmacy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Drop-off at Pharmacy</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Walk into 180+ verified stores nearby</p>
+</div>
+</div>
+<span class="bg-secondary-container text-on-secondary-container px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shrink-0">
+          Instant Credits
+        </span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-3 rounded-xl">
+<div class="flex items-center gap-2 text-on-surface-variant min-w-0">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0">near_me</span>
+<span class="font-label-md text-label-md truncate text-primary font-medium">Nearest: MedPlus (250m, 100ft Road)</span>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+<!-- Reverse Doorstep Pickup Card -->
+<div class="w-full bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-md transition-all flex flex-col gap-3 group cursor-pointer active:scale-[0.99]" role="button" tabindex="0">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[28px]">electric_moped</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Doorstep Reverse Pickup</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Coordinated with daily eco-delivery vans</p>
+</div>
+</div>
+<span class="bg-surface-container-high text-on-primary-fixed-variant px-2.5 py-1 rounded-full font-label-sm text-label-sm font-semibold shrink-0">
+          Zero Contact
+        </span>
+</div>
+<div class="flex items-center justify-between bg-surface-container-low p-3 rounded-xl">
+<div class="flex items-center gap-2 text-on-surface-variant min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">schedule</span>
+<span class="font-label-md text-label-md truncate text-primary font-medium">Slots available today: 2:00 PM – 5:00 PM</span>
+</div>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Live Return Status Card (Active Chain of Custody) -->
+<section class="w-full bg-surface-container-lowest rounded-2xl p-4 shadow-sm flex flex-col gap-y-3">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed-dim animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary font-bold">Active Return Tracker</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">
+        #MC-88421
+      </span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Apollo Pharmacy, Indiranagar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Batch sealed &amp; awaiting pharmaceutical waste transport.
+      </p>
+</div>
+<!-- Stepper bar -->
+<div class="py-2">
+<div class="relative flex items-center justify-between w-full">
+<!-- Connecting Line Background -->
+<div class="absolute left-4 right-4 h-1 bg-surface-container rounded-full top-1/2 -translate-y-1/2"></div>
+<!-- Active Progress Line Segment -->
+<div class="absolute left-4 w-1/2 h-1 bg-secondary rounded-full top-1/2 -translate-y-1/2"></div>
+<!-- Node 1: Complete -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1.5 font-medium">Dropped</span>
+</div>
+<!-- Node 2: Active Handover -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">inventory_2</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold mt-1.5">Vaulted</span>
+</div>
+<!-- Node 3: Pending Logistics -->
+<div class="relative z-10 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1.5">Destruction</span>
+</div>
+</div>
+</div>
+<button class="w-full min-h-[48px] rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+      View Chain of Custody &amp; Disposal Pass
+    </button>
+</section>
+<!-- Educational & Safety Guidelines Micro-banner -->
+<section class="w-full bg-surface-container-low rounded-2xl p-4 flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">What can be returned?</h3>
+</div>
+<!-- Pill chips -->
+<div class="flex flex-wrap gap-2">
+<span class="bg-surface-container-lowest px-3 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface shadow-2xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Expired Tablets
+      </span>
+<span class="bg-surface-container-lowest px-3 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface shadow-2xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Unopened Blisters
+      </span>
+<span class="bg-surface-container-lowest px-3 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface shadow-2xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Inhalers &amp; Sprays
+      </span>
+<span class="bg-surface-container-lowest px-3 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface shadow-2xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span> Sealed Ointments
+      </span>
+</div>
+<!-- Caution Notice -->
+<div class="bg-error-container/40 p-3 rounded-xl flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm text-on-error-container leading-snug">
+<strong>Strict Safety Rule:</strong> No used syringe needles, hazardous cytotoxic vials, or broken syrups. Resale is an offense under Central Drugs Standard Control Organization guidelines.
+      </p>
+</div>
+</section>
+<!-- Visual Eco-Impact Story Card -->
+<section class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-surface-container-lowest flex flex-col">
+<div class="w-full h-36 bg-cover bg-center relative" data-alt="A clean, modern pharmaceutical safe recycling drop box container located inside a bright daylight pharmacy with green leafy indoor plants and environmental sustainability symbols in Bangalore, photographed with gentle cinematic natural lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCkXjD9DqiZdTMSvdGS30RILRKKj77t7H8PyaBW55r44Q4Ig6-GPl5IihRboOyCeznk1ZyHUqk4KDHRP7QNQfBVnWAjChJlmyVNrpchwLCE_pw71zJyEeeIcumcbhPGGcJqtgPs91hWt3SDL1nV0TRBdiRQrpPetcdGvALqjsXqnjstxiNLcXWAI9zsJjIuiYt5B6DbgZ6vISPBGd9Ge3lArhAYqyfpaUbeI_yMAvQW7SYTzsKy5OiEw')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 text-on-primary">
+<span class="font-label-sm text-label-sm bg-secondary px-2 py-0.5 rounded text-on-secondary font-bold uppercase tracking-wider">
+          Community Impact
+        </span>
+<h4 class="font-headline-sm text-headline-sm text-surface-bright mt-1">Zero Medicine in Bengaluru Waters</h4>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<p class="font-body-sm text-body-sm text-on-surface-variant pr-2">
+        See how 12,400+ residents prevented active pharmaceutical ingredients from reaching Bellandur Lake.
+      </p>
+<button class="min-h-[48px] px-3 rounded-xl bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md shrink-0 flex items-center gap-1" type="button">
+        Report <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</section>
+<!-- Recent Activity Section -->
+<section class="flex flex-col gap-y-2.5">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-primary">Recent Safe Disposals</h2>
+<a class="font-label-md text-label-md text-secondary hover:underline" href="#">View All</a>
+</div>
+<!-- Log Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">domain</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-primary truncate">Apollo Pharmacy Drop-off</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">3 strips Paracetamol (500mg) • Verified</p>
+<span class="font-label-sm text-label-sm text-outline">Yesterday, 4:15 PM</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary font-bold">+30 Credits</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span> Credited
+        </span>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-xs flex items-center justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">two_wheeler</span>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-primary truncate">Doorstep Reverse Pickup</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Asthalin Inhaler (1 unit, empty canister)</p>
+<span class="font-label-sm text-label-sm text-outline">Oct 12, 11:30 AM</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-label-lg text-label-lg text-secondary font-bold">+50 Credits</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span> Credited
+        </span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Micro-interaction for quick feedback
+  document.querySelectorAll('[role="button"]').forEach((card) => {
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        card.click();
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,41,66,0.08)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-20 px-space-xs max-w-md mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 transition-colors text-secondary" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-1">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="return-medicines" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">cycle</span><span class="absolute -top-1 -right-2 px-1 py-0.2 bg-secondary text-on-secondary rounded-full font-label-sm text-[9px] leading-tight">Eco</span></div><span class="font-label-sm text-label-sm mt-1">Return</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="eco-wallet" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-sm text-label-sm mt-1">Wallet</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="disposal-history" href="#"><span class="material-symbols-outlined text-[24px]">history</span><span class="font-label-sm text-label-sm mt-1">History</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[48px] py-1 text-on-surface-variant transition-colors hover:text-primary" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm mt-1">Profile</span></a></div></nav><script src="navigation.js"></script></body></html>

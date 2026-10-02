@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-container":"#7991af","surface-container-high":"#dce9ff","secondary":"#006c4a","tertiary-container":"#401f00","tertiary-fixed-dim":"#ffb77d","surface-bright":"#f8f9ff","on-error-container":"#93000a","surface":"#f8f9ff","surface-dim":"#cbdbf5","on-secondary-fixed-variant":"#005137","error":"#ba1a1a","secondary-fixed":"#85f8c4","inverse-surface":"#213145","on-tertiary-fixed-variant":"#6e3900","on-tertiary":"#ffffff","on-surface-variant":"#43474d","secondary-fixed-dim":"#68dba9","on-surface":"#0b1c30","on-background":"#0b1c30","background":"#f8f9ff","on-primary-fixed":"#011d35","on-tertiary-container":"#d77503","outline":"#74777e","on-secondary":"#ffffff","primary-fixed-dim":"#b0c9e8","primary":"#001428","tertiary":"#220e00","secondary-container":"#82f5c1","surface-tint":"#49607c","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#314863","surface-container-highest":"#d3e4fe","outline-variant":"#c3c6ce","primary-fixed":"#d1e4ff","surface-container-lowest":"#ffffff","inverse-primary":"#b0c9e8","surface-container":"#e5eeff","on-secondary-fixed":"#002114","inverse-on-surface":"#eaf1ff","on-tertiary-fixed":"#2f1500","primary-container":"#0f2942","surface-variant":"#d3e4fe","on-error":"#ffffff","error-container":"#ffdad6","tertiary-fixed":"#ffdcc3","on-primary":"#ffffff","on-secondary-container":"#00714e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","margin-tablet":"2rem","margin-desktop":"3rem","space-md":"1rem","space-xs":"0.25rem","margin":"1rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","space-2xl":"3rem","gutter-desktop":"1.5rem"},"fontFamily":{"label-sm":["Inter"],"headline-md":["Inter"],"body-sm":["Inter"],"headline-lg-mobile":["Inter"],"display-lg":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"headline-sm":["Inter"]},"fontSize":{"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["16px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,41,66,0.06)]"><div class="h-20 px-space-md flex flex-col justify-center gap-space-xs"><div class="flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #0f2942
+- Font: inter
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Wbtz-4h-65Sii-69tBO_6kW5mW5G8xo6OAwWx1rLcjbZ7grAUbNuvfDYN1Jn7aQ4QdRAkAN6qJv0nSI1DZiY7dpfLHL6WejdI3LFiuXcYOiPhhvN3VpgH5kwMtt12aZAL5h2LawXQjoSfnaRlFrG-Ca3N97y6a0DZJzfeoac5wKez27zCM73LczOJviYmqH-tKPHVRtRrpyYOBYV1yYm06U7gCFecSWDt7Ca_F7ClPqayOjsOKZd4vVDQ"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md text-primary">MediCycle</span><span class="font-label-sm text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-secondary/10 text-secondary font-bold">Partner Staff</span></div><span class="font-body-sm text-[11px] leading-tight text-on-surface-variant truncate max-w-[200px]">Apollo Pharmacy #104 · Indiranagar</span></div></div><div class="flex items-center gap-space-sm"><div class="hidden xs:flex flex-col text-right"><span class="font-label-sm text-label-sm text-on-surface leading-tight">Suresh (RPh)</span><span class="font-body-sm text-[10px] text-on-surface-variant leading-tight">Counter #2</span></div><div class="relative flex items-center justify-center min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-secondary/20" src="https://lh3.googleusercontent.com/aida/AEtjO1VqRmRwdl70b0iiMBNURDhLFphntwVElGvL6Cq98nsqIhbBlkdrFzsdw2PhqxdVFdJSCpsSt0CKPFTptuMW29BIsllmlCIdkRNYfFrJ2ZI0xljkut_ifEg4HJR-qxjdH6TWOfWwX32c2KAX3THk6QIHB9ROXgj8qsuN-SYY_XBkbgixI3Rtd0tJRizPhmP4vGHGJEd7O4ss-iktt0PGmVSMqbLFLFFM051rYyUgQE_UnVX0Jndq8CM_Pgbj"/><span class="absolute bottom-1.5 right-1.5 w-2.5 h-2.5 rounded-full bg-secondary ring-2 ring-surface"></span></div></div></div><div class="flex items-center justify-between"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Vault Storage</h1><div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-[11px]">POS Scanner Online</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-space-md py-space-sm gap-space-md">
+<!-- Vault Safety Status Pill & Header Card -->
+<div class="relative overflow-hidden rounded-xl bg-primary-container text-on-primary p-space-md shadow-md">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 rounded-full bg-secondary/15 pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-xs mb-space-xs">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary text-on-secondary">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">CPCB Compliant</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-container bg-surface-container-highest/20 px-2 py-0.5 rounded">Locker #3</span>
+</div>
+<h2 class="font-headline-md text-headline-md tracking-tight text-surface-lowest">Authorized Hazardous Quarantine</h2>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">Apollo Pharmacy #104 · Secure Bio-Medical Vault</p>
+<div class="flex items-center gap-space-xs mt-space-sm pt-space-xs border-t-0 bg-surface-container-highest/10 -mx-space-md -mb-space-md px-space-md py-2 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">verified_user</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Certified CPCB Biomedical Rules 2016 (Form IV Logged)</span>
+</div>
+</div>
+<!-- Real-time Metrics Snapshot -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Active Quarantine</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">inventory</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">49</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">units ready</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mt-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 70%"></div>
+</div>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Vault Temperature</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">thermostat</span>
+</div>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">21.4°</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">C (Controlled)</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-[11px] leading-tight">Humidity Normal (48%)</span>
+</div>
+</div>
+</div>
+<!-- Section: Active Storage Bins Inventory -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">layers</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Storage Bins</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">2 Monitored</span>
+</div>
+<!-- Card 1: Bin A-04 (High Capacity Alert) -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">medication</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Bin A-04</h4>
+<span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-[10px] uppercase font-bold">Seal Pending</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Blisters &amp; Solid Oral Dosage</p>
+</div>
+</div>
+</div>
+<!-- Capacity Bar -->
+<div class="mt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-on-surface">Capacity (84%)</span>
+<span class="font-label-sm text-label-sm font-bold text-on-tertiary-container">42 / 50 slots</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-tertiary-fixed-dim h-full rounded-full transition-all duration-500" style="width: 84%"></div>
+</div>
+<div class="flex items-center gap-1 mt-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span class="font-label-sm text-[11px] font-mono text-on-surface">Seal ID: #SEAL-99201-IND</span>
+</div>
+</div>
+<!-- Content Breakdown Tag Grid -->
+<div class="mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Manifest Snapshot</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">18x Metformin 500mg</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">12x Paracetamol</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">8x Atorvastatin</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">4x Amoxicillin</span>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="mt-space-md w-full min-h-[48px] px-space-md py-space-xs rounded-xl bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm active:scale-[0.98] transition-transform" id="sealBinBtn" onclick="handleSealBag(this)">
+<span class="material-symbols-outlined text-[20px]">encrypted</span>
+<span>Seal Bag &amp; Generate Courier Manifest</span>
+</button>
+</div>
+<!-- Card 2: Bin B-02 (Canisters / Inhalers) -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">air</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">Bin B-02</h4>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[10px] uppercase font-bold">Intake Open</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pressurized Aerosol &amp; Canisters</p>
+</div>
+</div>
+</div>
+<!-- Capacity Bar -->
+<div class="mt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-label-sm text-label-sm text-on-surface">Capacity (35%)</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">7 / 20 slots</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 35%"></div>
+</div>
+<div class="flex items-center gap-1 mt-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">barcode_scanner</span>
+<span class="font-label-sm text-[11px] font-mono text-on-surface">Seal ID: #SEAL-99202-IND</span>
+</div>
+</div>
+<!-- Content Breakdown Tag Grid -->
+<div class="mt-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Manifest Snapshot</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">5x Salbutamol 100mcg</span>
+<span class="font-label-sm text-[11px] px-2 py-0.5 rounded bg-surface-container text-on-surface">2x Budecort Rotacaps</span>
+</div>
+</div>
+<!-- Secondary Dual Action Buttons -->
+<div class="grid grid-cols-2 gap-space-xs mt-space-md">
+<button class="min-h-[48px] px-space-xs py-space-xs rounded-xl bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-variant transition-colors" onclick="handlePrintLabel(this)">
+<span class="material-symbols-outlined text-[18px]">print</span>
+<span>Print Label</span>
+</button>
+<button class="min-h-[48px] px-space-xs py-space-xs rounded-xl bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:bg-surface-variant transition-colors" onclick="toggleLogModal()">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+<span>View Log</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Scheduled Reverse Logistics Pickup Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">local_shipping</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Next Courier Pickup</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-[11px] font-bold animate-pulse">In 2h 15m</span>
+</div>
+<!-- Logistics Partner Info -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">electric_bolt</span>
+</div>
+<div>
+<span class="font-label-md text-label-md text-on-surface block font-bold">Delhivery Green Fleet</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Scheduled Window: 5:30 PM – 6:30 PM</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+</div>
+<div class="pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Manoj Kumar (Driver)</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">KA-01-EQ-9042 · Tata Ace EV</span>
+</div>
+</div>
+<a aria-label="Call Courier Driver" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary active:bg-surface-variant" href="tel:+919876543210">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+</div>
+</div>
+<!-- Cryptographic 2-Way OTP Box -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">pin</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface">Driver Handoff OTP</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Confirm after physical scale reading</span>
+</div>
+</div>
+<div class="px-3 py-1 rounded-lg bg-surface-container-lowest font-headline-sm text-headline-sm text-primary font-mono tracking-widest">
+        7294
+      </div>
+</div>
+</div>
+<!-- Manifest Audit Log & Chain of Custody -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">history_edu</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Chain of Custody Log</h3>
+</div>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Karnataka PCB Linked</span>
+</div>
+<!-- Audit Item 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-sm shadow-sm flex flex-col gap-1.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">#BAT-88219</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary/10 text-secondary font-label-sm text-[10px] font-bold">At Incinerator</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">50 units (4.2 kg) · Picked up Oct 12</span>
+</div>
+</div>
+<button aria-label="Download destruction certificate" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary" onclick="downloadCertificate('#BAT-88219')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="text-[11px] font-label-sm text-secondary bg-surface-container-low px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>Certificate Issued: Central Karnataka High-Temp Destruction Hub</span>
+</div>
+</div>
+<!-- Audit Item 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-sm shadow-sm flex flex-col gap-1.5">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">task_alt</span>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-mono font-bold">#BAT-88104</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-[10px] font-bold">Destroyed</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">48 units (3.9 kg) · Picked up Oct 05</span>
+</div>
+</div>
+<button aria-label="Download destruction certificate" class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary" onclick="downloadCertificate('#BAT-88104')">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+<div class="text-[11px] font-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">policy</span>
+<span>Fully Neutralized &amp; Ash Vitrified · Registry Sync OK</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Footer Controls -->
+<div class="flex flex-col gap-space-sm mt-space-xs pb-space-sm">
+<button class="min-h-[48px] w-full px-space-md py-space-xs rounded-xl bg-surface-container-high text-primary font-label-md text-label-md flex items-center justify-center gap-2 active:bg-surface-variant transition-colors" onclick="requestEmergencySwap(this)">
+<span class="material-symbols-outlined text-[20px]">swap_horizontal_circle</span>
+<span>Request Emergency Bin Swap</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 py-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">file_download</span>
+<a class="font-label-sm text-label-sm text-secondary font-bold underline underline-offset-4" href="#register-download" onclick="downloadStorageRegister(event)">
+        Download CPCB Storage Register (CSV/PDF)
+      </a>
+</div>
+</div>
+<!-- Notification Banner Overlay (Hidden by Default) -->
+<div class="fixed top-24 left-4 right-4 z-50 transform -translate-y-32 transition-transform duration-300 rounded-xl bg-primary-container text-on-primary p-space-sm shadow-xl flex items-center gap-space-sm pointer-events-none opacity-0" id="toastNotification">
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shrink-0" id="toastIconContainer">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-bold truncate" id="toastTitle">Notification</span>
+<span class="font-body-sm text-[12px] text-on-primary-container truncate" id="toastMessage">Details here</span>
+</div>
+</div>
+<!-- Modal for Log Details (Bin B-02) -->
+<div class="fixed inset-0 z-50 bg-primary/40 backdrop-blur-sm hidden flex-col justify-end p-space-md" id="logModal">
+<div class="w-full bg-surface-container-lowest rounded-2xl p-space-md shadow-2xl flex flex-col gap-space-sm animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between pb-2 border-b-0">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">list_alt</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bin B-02 Intake Log</h4>
+</div>
+<button aria-label="Close modal" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface" onclick="toggleLogModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2 max-h-60 overflow-y-auto pr-1">
+<div class="p-2 rounded bg-surface-container-low flex justify-between items-center text-on-surface">
+<span class="font-label-sm text-label-sm">Salbutamol 100mcg (3 cans)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">11:15 AM · Customer #C-901</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex justify-between items-center text-on-surface">
+<span class="font-label-sm text-label-sm">Budecort Rotacaps (2 units)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">09:42 AM · Customer #C-877</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low flex justify-between items-center text-on-surface">
+<span class="font-label-sm text-label-sm">Salbutamol 100mcg (2 cans)</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Yesterday · Customer #C-802</span>
+</div>
+</div>
+<button class="mt-2 w-full min-h-[48px] rounded-xl bg-primary text-on-primary font-label-md text-label-md" onclick="toggleLogModal()">Close Audit Record</button>
+</div>
+</div>
+</div>
+<script>
+  function showToast(title, message, icon = 'check') {
+    const toast = document.getElementById('toastNotification');
+    const toastTitle = document.getElementById('toastTitle');
+    const toastMsg = document.getElementById('toastMessage');
+    const iconContainer = document.getElementById('toastIconContainer');
+    
+    toastTitle.textContent = title;
+    toastMsg.textContent = message;
+    iconContainer.innerHTML = `<span class="material-symbols-outlined text-[18px]">${icon}</span>`;
+    
+    toast.classList.remove('-translate-y-32', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    
+    setTimeout(() => {
+      toast.classList.add('-translate-y-32', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  function handleSealBag(button) {
+    button.disabled = true;
+    button.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Generating Barcode Manifest...</span>`;
+    
+    setTimeout(() => {
+      button.className = "mt-space-md w-full min-h-[48px] px-space-md py-space-xs rounded-xl bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-2";
+      button.innerHTML = `<span class="material-symbols-outlined text-secondary text-[20px]">task_alt</span><span>Manifest BAT-99201 Queued</span>`;
+      showToast('Bin A-04 Sealed & Cryptolocked', 'Manifest added to Delhivery 5:30 PM collection', 'lock');
+    }, 1200);
+  }
+
+  function handlePrintLabel(button) {
+    const originalText = button.innerHTML;
+    button.innerHTML = `<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Printing...</span>`;
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      showToast('Label Spooled to Thermal POS', 'Bin B-02 adhesive tag generated (Printer #1)', 'print');
+    }, 1000);
+  }
+
+  function toggleLogModal() {
+    const modal = document.getElementById('logModal');
+    if (modal.classList.contains('hidden')) {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    } else {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+  }
+
+  function requestEmergencySwap(button) {
+    const originalText = button.innerHTML;
+    button.innerHTML = `<span class="material-symbols-outlined text-[20px] animate-spin">hourglass_top</span><span>Dispatching Unit...</span>`;
+    setTimeout(() => {
+      button.innerHTML = originalText;
+      showToast('Swap Ticket #SW-302 Logged', 'Spare 50L Solid Oral Bin en route from Central Hub', 'local_shipping');
+    }, 1100);
+  }
+
+  function downloadCertificate(batchId) {
+    showToast('Certificate Decrypted', `Form-IV Destruction Proof for ${batchId} saved to downloads`, 'verified');
+  }
+
+  function downloadStorageRegister(e) {
+    e.preventDefault();
+    showToast('Register Exported', 'Apollo #104 Safe Storage Register downloaded as PDF', 'description');
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,41,66,0.06)]" data-active-classes="text-secondary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Dashboard</span></a><a class="relative flex flex-col items-center justify-center w-16 h-12 text-on-surface-variant hover:text-secondary transition-colors" data-path="verify-scan" href="#"><span class="material-symbols-outlined text-[24px] text-secondary">qr_code_scanner</span><span class="font-label-sm text-[11px] leading-tight text-secondary font-bold mt-0.5">Verify Scan</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-12 transition-colors text-secondary" data-path="vault-storage" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Storage</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="courier-pickups" href="#"><span class="material-symbols-outlined text-[22px]">local_shipping</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Pickups</span></a><a class="flex flex-col items-center justify-center w-14 h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="staff-commission" href="#"><span class="material-symbols-outlined text-[22px]">payments</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Commission</span></a></div></nav><script src="navigation.js"></script></body></html>
