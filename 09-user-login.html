@@ -178,6 +178,7 @@
     const otpToggleBtn = document.getElementById('otp-toggle-btn');
     const submitBtnLabel = document.getElementById('submit-btn-label');
     isOtpMode = !isOtpMode;
+    window.MEDICYCLE_OTP_MODE = isOtpMode;
 
     if (isOtpMode) {
       passwordContainer.classList.add('hidden');
