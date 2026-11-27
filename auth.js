@@ -63,6 +63,14 @@
   }
 
   async function login() {
+    if (window.MEDICYCLE_SELECTED_ROLE === 'pharmacy') {
+      showMessage('Partner pharmacy authentication is not exposed by the current FastAPI login endpoint yet. Use the household account flow for now.', true);
+      return;
+    }
+    if (window.MEDICYCLE_OTP_MODE === true) {
+      showMessage('OTP authentication is not implemented by the current API. Switch to password login.', true);
+      return;
+    }
     const identifier = document.getElementById('user-identifier')?.value.trim();
     const password = document.getElementById('user-password')?.value;
     if (!identifier) {
