@@ -1,0 +1,26 @@
+name: Frontend validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: |
+          node --check api-config.js
+          node --check auth.js
+          node --check navigation.js
+      - name: Verify login integration wiring
+        run: |
+          grep -q 'api-config.js' 09-user-login.html
+          grep -q 'auth.js' 09-user-login.html
+          grep -q "MediCycleAuth.login" navigation.js
