@@ -126,6 +126,14 @@
         return;
       }
 
+      if (/^log out of medicycle/i.test(text) && window.MediCycleAuth) {
+        button.onclick = function (event) {
+          if (event) event.preventDefault();
+          window.MediCycleAuth.logout();
+        };
+        return;
+      }
+
       // Use live FastAPI authentication; never treat demo navigation as sign-in.
       if (/^log in to medicycle/i.test(text)) {
         button.onclick = function (event) {
