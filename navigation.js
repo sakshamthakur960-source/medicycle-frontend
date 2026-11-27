@@ -126,17 +126,23 @@
         return;
       }
 
-      // Keep the exported login validation: navigate only after a non-empty identifier.
+      if (/^log out of medicycle/i.test(text) && window.MediCycleAuth) {
+        button.onclick = function (event) {
+          if (event) event.preventDefault();
+          window.MediCycleAuth.logout();
+        };
+        return;
+      }
+
+      // Use live FastAPI authentication; never treat demo navigation as sign-in.
       if (/^log in to medicycle/i.test(text)) {
         button.onclick = function (event) {
           if (event) event.preventDefault();
-          const input = document.getElementById('user-identifier');
-          if (!input || !input.value.trim()) {
-            if (typeof window.handleLogin === 'function') window.handleLogin();
-            return;
+          if (window.MediCycleAuth && typeof window.MediCycleAuth.login === 'function') {
+            window.MediCycleAuth.login();
+          } else if (typeof window.handleLogin === 'function') {
+            window.handleLogin();
           }
-          if (typeof window.handleLogin === 'function') window.handleLogin();
-          setTimeout(function () { go('18-good-morning-ramesh.html'); }, 0);
         };
         return;
       }
