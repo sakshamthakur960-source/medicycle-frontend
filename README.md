@@ -51,3 +51,21 @@ This is still a static frontend prototype. The buttons use local page navigation
 ## GitHub Pages layout
 
 All `.html` screens and `navigation.js` are intentionally at the repository root for a simple GitHub Pages deployment.
+
+
+## Live FastAPI authentication integration
+
+The login screen now calls the Python backend's existing `POST /api/auth/login` endpoint and stores the returned bearer token in `sessionStorage` for the current browser-tab session. Authenticated frontend requests can use `MediCycleAuth.request(path, options)`; the client automatically adds the bearer token. `MediCycleAuth.me()` calls `GET /api/users/me`, and logout clears the local session.
+
+### Configure the API URL
+
+Edit `api-config.js` and set `window.MEDICYCLE_API_BASE_URL` to the deployed FastAPI service origin (for example, the Render service's `https://…onrender.com` origin). The committed default is `http://127.0.0.1:8000` for local development; GitHub Pages cannot reach a developer's localhost.
+
+The backend must allow the GitHub Pages origin in `CORS_ORIGINS`. The Python API currently allows `https://sakshamthakur960-source.github.io` in its example configuration. Keep the API on HTTPS in production.
+
+### Current backend capability boundaries
+
+- Household email/mobile + password login is connected.
+- OTP, biometric, and partner-pharmacy authentication are not implemented by the current FastAPI authentication endpoints. The prototype now displays a clear message instead of pretending those flows succeeded.
+- The remaining Stitch screens are still prototype screens; this change does not falsely claim that every screen is backed by live API data.
+- The backend issues 60-minute bearer tokens by default. The frontend keeps the token in `sessionStorage`, not persistent local storage or a JavaScript-readable cookie.
